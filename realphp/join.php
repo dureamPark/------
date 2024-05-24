@@ -1,7 +1,7 @@
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <head>
   <style type="text/css">
-    hEvent:hover{
+    .hEvent:hover{
       color: #003675;
     }
 
