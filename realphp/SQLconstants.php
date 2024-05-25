@@ -10,4 +10,6 @@
 
 	// MySQL Database
 	$mySQL_database = "University"; 
+
+	$conn = mysqli_connect($mySQL_host,$mySQL_id,$mySQL_password,$mySQL_database) or die ("Can't access DB");
 ?>

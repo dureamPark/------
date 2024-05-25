@@ -151,7 +151,7 @@ header('Content-Type: text/html; charset=UTF-8');
       </div>
       <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
         <div style="width: 700px; padding: 40px; border-top: 1px #D8D8D8 solid; border-bottom: 1px #D8D8D8 solid; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
-          <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+          < style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
             <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">아이디</div>
 
@@ -166,7 +166,7 @@ header('Content-Type: text/html; charset=UTF-8');
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
                 <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">
                 <input type="password" name="password" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";">
-                </form>
+                <!-- </form> -->
             </div>
       </div>
    </div>
@@ -179,10 +179,12 @@ header('Content-Type: text/html; charset=UTF-8');
               <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
               <div onClick="javascript:document.formm.submit();" style="color: white; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">로그인</div>
             </div>
+  </form>
             <div style="align-self: stretch; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
               <div style="width: 68px; padding: 2px; border-radius: 6px; justify-content: center; align-items: center; gap: 4px; display: flex">
                 <div onClick="location.href='./join.php'"; style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word">회원가입</div>
               </div>
+              
             </div>
           </div>
           
