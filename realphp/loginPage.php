@@ -154,13 +154,13 @@ header('Content-Type: text/html; charset=UTF-8'); ?>
             <form action="loginPageSQL.php" method="post">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">아이디</div>
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" placeholder="영문 소문자" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" name="uname" placeholder="영문 소문자" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
               </div>
             </div>
             <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">비밀번호</div>
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="submit" name="password" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
               </div>
             </div>
             <div onClick="location.href='./mainUSER.php'" style="align-self: stretch; height: 56px; padding-left: 20px; padding-right: 20px; background: #246BEB; border-radius: 8px; justify-content: center; align-items: center; gap: 4px; display: inline-flex; cursor:hand">
