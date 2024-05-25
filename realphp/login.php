@@ -1,9 +1,7 @@
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
-<!DOCTYPE html>
-<html lang="ko">
 <head>
   <style type="text/css">
-    .hEvent:hover{
+    hEvent:hover{
       color: #003675;
     }
 
@@ -99,7 +97,27 @@
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삽입담당자!!!!-->
+                  <!--삽입담당자!!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
+                  </div>
+                </a>
+              </div></div>
+              
+            </div>
+            <div style="width: 160px; align-self: stretch; padding-left: 16px; padding-right: 16px; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+              <div class="dropdown" style="color: #555555; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word">명단 삭제<div class="dropdown-content">
+                <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px;  justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  <!--삭제학생!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
+                  </div>
+                </a>
+                <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  <!--삭제교수!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
+                  </div>
+                </a>
+                <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  <!--삭제담당자!!!!!-->
                   <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
                   </div>
                 </a>
@@ -108,32 +126,63 @@
             </div>
           </div>
         </div>
-        <div style="align-self: stretch; height: 32px; flex-direction: column; justify-content: flex-start; align-items: center; display: flex"></div>
       </div>
     </div>
-    <!--여기까지 헤더-->
+    <!--헤더-->
 
+    <!--메인로고-->
+    <!--여기 메인버튼 있어요!!!!-->
+    <!--여기 메인버튼 있어요!!!!-->
+    <!--여기 메인버튼 있어요!!!!-->
+    <div onClick="location.href='./mainNOTUSER.php'" style="width: 172px; height: 75px; left: 1vw; top: 39px; position: absolute; cursor:hand">
+      <div style="left: 45px; top: 0px; position: absolute; color: #65A2FC; font-size: 50px; font-family: Notable; font-weight: 400; line-height: 75px; word-wrap: break-word; font-family : fantasy;">⩸SEM</div>
+    </div>
+    <!--여기까지 메인로고-->
 
-    <!--로그인화면-->
-    <div style="height: 60vh; left: 0px; top: 204px; position: absolute; background: white; flex-direction: column; justify-content: center; align-items: center; gap: 40px; display: flex">
-      <div style="width: 312px; height: 208px; flex-direction: column; justify-content: center; align-items: center; gap: 16px; display: flex">
-        <form action="loginSQL.php" method="post" style="width: 100%; display: flex; flex-direction: column; gap: 16px;">
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-            <label for="id" style="color: #333333; font-size: 16px; font-family: NanumGothic; font-weight: 700; line-height: 24px;">아이디</label>
-            <input type="text" id="userid" name="userid" style="width: 100%; height: 40px; padding: 8px; border: 1px solid #D1D1D1; border-radius: 4px;" required>
+    <!--로그인-->
+    <div style="padding-bottom: 80px; top: 292px; position: relative; flex-direction: column; justify-content: center; align-items: center; gap: 80px; display: flex;">
+      <div style="flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex; text-align:center;">
+        <div style="color: #1D1D1D; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word; text-align: center;">SEM 사용자 로그인</div>
+        <div style="color: #1D1D1D; font-size: 40px; font-family: NanumGothic; font-weight: 700; line-height: 60px; letter-spacing: 1px; word-wrap: break-word">아이디/비밀번호 로그인</div>
+      </div>
+      <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+        <div style="width: 700px; padding: 40px; border-top: 1px #D8D8D8 solid; border-bottom: 1px #D8D8D8 solid; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
+          <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+            <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+              <form action="loginSQL.php" method="post">
+            <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">아이디</div>
+              <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" name="uname" placeholder="영문 소문자" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+              </div>
+            </div>
+            <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+              <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">비밀번호</div>
+              <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" name="password" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+              </div>
+            </div>
+            <div onClick="location.href='./mainUSER.php'" style="align-self: stretch; height: 56px; padding-left: 20px; padding-right: 20px; background: #246BEB; border-radius: 8px; justify-content: center; align-items: center; gap: 4px; display: inline-flex; cursor:hand">
+              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
+              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
+              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
+              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
+              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
+              <button type="submit" style="color: white; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">로그인</button>
+              </form>
+            </div>
+            <div style="align-self: stretch; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+              <div style="width: 68px; padding: 2px; border-radius: 6px; justify-content: center; align-items: center; gap: 4px; display: flex">
+                <div onClick="location.href='./join.php'" style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word; cursor:hand">회원가입</div>
+              </div>
+            </div>
           </div>
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-            <label for="password" style="color: #333333; font-size: 16px; font-family: NanumGothic; font-weight: 700; line-height: 24px;">비밀번호</label>
-            <input type="password" id="password" name="password" style="width: 100%; height: 40px; padding: 8px; border: 1px solid #D1D1D1; border-radius: 4px;" required>
+          
+          
+            
           </div>
-          <button type="submit" style="width: 100%; height: 48px; background: #003675; color: white; font-size: 16px; font-family: NanumGothic; font-weight: 700; border: none; border-radius: 4px; cursor: pointer;">로그인</button>
-        </form>
+        </div>
+        
       </div>
     </div>
-    <!--여기까지 로그인화면-->
-
-
-
   </div>
 </body>
-</html>
