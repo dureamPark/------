@@ -151,7 +151,7 @@ header('Content-Type: text/html; charset=UTF-8'); ?>
         <div style="width: 700px; padding: 40px; border-top: 1px #D8D8D8 solid; border-bottom: 1px #D8D8D8 solid; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
           <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
             <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
-            <form action="loginSQL.php" method="post">
+            <form action="loginPageSQL.php" method="post">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">아이디</div>
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
                 <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" placeholder="영문 소문자" style="font-size: 19px; width: 455.5px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
