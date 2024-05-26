@@ -12,9 +12,17 @@
 	
 
 	// MySQL  추가 실행 	
-	$query = "INSERT INTO user_id( id, pwd ) VALUES ( '".$user_id."', '".$user_pass."');"; 
-	$result = mysqli_query( $conn, $query );
-	if( !$result && $user_pass == $user_passcheck ) 
+	
+
+    if($user_pass != $user_passcheck){
+        $result=false;
+    }else{
+        $query = "INSERT INTO user_id( id, pwd ) VALUES ( '".$user_id."', '".$user_pass."');"; 
+	    $result = mysqli_query( $conn, $query );
+    }
+
+
+	if( $result ) 
 	{	
 		$message = "(".$user_id.") 을 회원으로 추가하였습니다."; 
         header("Location: loginPage.php");
@@ -23,6 +31,8 @@
 	else 
 	{
 		$message = "회원 명단에 추가할 수 없습니다."; 
+        header("Location: join.php");
+        exit();
 	} 
 ?>
 
