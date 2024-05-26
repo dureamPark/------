@@ -31,7 +31,7 @@
 	else 
 	{
 		$message = "회원 명단에 추가할 수 없습니다."; 
-        header("Location: join.php");
+        header("Location: join.php?error=비밀번호 확인 실패.");
         exit();
 	} 
 ?>
