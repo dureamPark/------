@@ -167,7 +167,7 @@
             <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">비밀번호 확인</div>
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" placeholder="비밀번호 확인" style="font-size: 19px; width: 650px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" name="passcheck" placeholder="비밀번호 확인" style="font-size: 19px; width: 650px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
               </div>
             </div>
 

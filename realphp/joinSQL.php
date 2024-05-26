@@ -3,6 +3,7 @@
 	// 이전 페이지에서 전달 받은 메시지 확인
 	$user_id = $_POST['userid'];
 	$user_pass = $_POST['userpass'];
+    $user_passcheck=$_POST['passcheck'];
 	
 	$message = "";
 
@@ -13,7 +14,7 @@
 	// MySQL  추가 실행 	
 	$query = "INSERT INTO user_id( id, pwd ) VALUES ( '".$user_id."', '".$user_pass."');"; 
 	$result = mysqli_query( $conn, $query );
-	if( !$result ) 
+	if( !$result && $user_pass == $user_passcheck ) 
 	{	
 		$message = "(".$user_id.") 을 회원으로 추가하였습니다."; 
         header("Location: loginPage.php");
