@@ -1,7 +1,7 @@
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <head>
   <style type="text/css">
-    .hEvent:hover{
+    hEvent:hover{
       color: #003675;
     }
 
@@ -67,18 +67,18 @@
             <div style="width: 160px; align-self: stretch; padding-left: 16px; padding-right: 16px; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
               <div class="dropdown" style="color: #555555; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word">명단 검색<div class="dropdown-content">
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px;  justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--검색!!!-->
-                  <div onClick="javascript:move( './search.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
+                  <!--검색학생!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삽입!!!!-->
-                  <div onClick="javascript:move( './insert.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
+                  <!--검색교수!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삭제!!!!!-->
-                  <div onClick="javascript:move( './delete.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
+                  <!--검색담당자!!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
                   </div>
                 </a>
               </div></div>
@@ -87,18 +87,18 @@
             <div style="width: 160px; align-self: stretch; padding-left: 16px; padding-right: 16px; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
               <div class="dropdown" style="color: #555555; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word">명단 추가<div class="dropdown-content">
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px;  justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--검색!!!-->
-                  <div onClick="javascript:move( './search.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
+                  <!--삽입학생!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삽입!!!!-->
-                  <div onClick="javascript:move( './insert.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
+                  <!--삽입교수!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삭제!!!!!-->
-                  <div onClick="javascript:move( './delete.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
+                  <!--삽입담당자!!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
                   </div>
                 </a>
               </div></div>
@@ -107,18 +107,18 @@
             <div style="width: 160px; align-self: stretch; padding-left: 16px; padding-right: 16px; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
               <div class="dropdown" style="color: #555555; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word">명단 삭제<div class="dropdown-content">
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px;  justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--검색!!!-->
-                  <div onClick="javascript:move( './search.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
+                  <!--삭제학생!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>학생 명단</hEvent></div>
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삽입!!!!-->
-                  <div onClick="javascript:move( './insert.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
+                  <!--삭제교수!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>교수 명단</hEvent></div>
                   </div>
                 </a>
                 <a href="#"><div style="width: 260px; height: 56px; padding-left: 24px; padding-right: 24px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                  <!--삭제!!!!!-->
-                  <div onClick="javascript:move( './delete.php' );" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
+                  <!--삭제담당자!!!!!-->
+                  <div onClick="location.href='./plzLogin.php'" style="flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word"><hEvent>담당자 명단</hEvent></div>
                   </div>
                 </a>
               </div></div>
@@ -134,7 +134,7 @@
     <!--여기 메인버튼 있어요!!!!-->
     <!--여기 메인버튼 있어요!!!!-->
     <!--여기 메인버튼 있어요!!!!-->
-    <div onClick="javascript:move( './main.php' );" style="width: 172px; height: 75px; left: 1vw; top: 39px; position: absolute">
+    <div onClick="location.href='./mainNOTUSER.php'" style="width: 172px; height: 75px; left: 1vw; top: 39px; position: absolute; cursor:hand">
       <div style="left: 45px; top: 0px; position: absolute; color: #65A2FC; font-size: 50px; font-family: Notable; font-weight: 400; line-height: 75px; word-wrap: break-word; font-family : fantasy;">⩸SEM</div>
     </div>
     <!--여기까지 메인로고-->
@@ -149,17 +149,18 @@
         <div style="width: 700px; padding: 40px; border-top: 1px #D8D8D8 solid; border-bottom: 1px #D8D8D8 solid; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
           <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
             <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
-
+           
+            <form name = "formm" method = "post" action = "./joinSQL.php">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">아이디</div>
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" placeholder="영문 소문자" style="font-size: 19px; width: 650px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" name="userid" placeholder="영문 소문자" style="font-size: 19px; width: 650px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
               </div>
             </div>
 
             <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
               <div style="color: black; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">비밀번호</div>
               <div style="align-self: stretch; height: 56px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 8px; border: 1px #717171 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" style="font-size: 19px; width: 650px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
+                <div style="flex: 1 1 0; color: #8E8E8E; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word"><input type="text" name="userpass" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" style="font-size: 19px; width: 650px; height:42.5px; border: 1px solid white; outline: none; background-color: transparent; value="";"></div>
               </div>
             </div>
 
@@ -171,18 +172,18 @@
             </div>
 
 
-
-            <div onClick="javascript:move( './!!!!!!로그인 판단해주세요!!.php');" style="align-self: stretch; height: 56px; padding-left: 20px; padding-right: 20px; background: #246BEB; border-radius: 8px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
-              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
-              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
-              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
-              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
-              <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
-              <div onClick="javascript:move( './!!!!!!!!로그인 판단해주세요!!.php');" style="color: white; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">로그인</div>
+            </form>
+            <div onClick="javascript:document.formm.submit();" style="align-self: stretch; height: 56px; padding-left: 20px; padding-right: 20px; background: #246BEB; border-radius: 8px; justify-content: center; align-items: center; gap: 4px; display: inline-flex; cursor:hand">
+              <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
+              <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
+              <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
+              <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
+              <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
+              <div style="color: white; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">회원가입</div>
             </div>
             <div style="align-self: stretch; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
               <div style="width: 68px; padding: 2px; border-radius: 6px; justify-content: center; align-items: center; gap: 4px; display: flex">
-                <div onClick="javascript:move( './!!!!!!!!회원가입 페이지!!.php');" style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word">회원가입</div>
+                <div style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word"></div>
               </div>
             </div>
           </div>

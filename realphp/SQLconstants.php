@@ -6,7 +6,7 @@
 	$mySQL_password = "Sk10091004!";
 
 	// MySQL Server 
-	$mySQL_host = "http://18.222.49.217:3306/";
+	$mySQL_host = "localhost"; //"http://18.222.49.217:3306/";
 
 	// MySQL Database
 	$mySQL_database = "University"; 

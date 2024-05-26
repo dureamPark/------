@@ -1,31 +1,24 @@
-<?php 
+<?php
 session_start();
 
-include("./ SQLconstants.php");
-
-$isLogin=$_SESSION['$isLogin'];
-
-
-
-
+include "SQLconstants.php";
 
 $uid=$_POST['uname'];
-$pwd=$_POST['password'];
+$pass=$_POST['password'];
 
-echo "$uid / $pwd";
+//echo $uid;
+//echo $pass;
 
-$uid=mysqli_real_escape_string($conn, $uid);
-$pwd=mysqli_real_escape_string($conn, $pwd);
 
-$sql="select * from user_id where id='$uid' and password=password('$pwd')";
-$result=mysqli_query($conn,$sql);
-$data=mysqli_fetch_array($result);
+$result = mysqli_query($conn, "SELECT * FROM user_id where id='$uid' AND pwd='$pass';");
+if($row = mysqli_fetch_array($result)){
 
-if($data){
-    $_SESSION['$isLogin']=time();
+        header("Location: mainUSER.php");
+        exit();
+        //echo "id:".$row['id']." <BR> password:".$row['pwd'];
+}else{
+
+        header("Location: loginPage.php?error=아이디 또는 비밀번호가 틀렸습니다.");
+        exit();
 }
-else{
-    
-}
-
 ?>
