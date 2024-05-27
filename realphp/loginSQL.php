@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "SQLconstants.php";
+include "SQLconstants_d.php";
 
 $uid=$_POST['uname'];
 $pass=$_POST['password'];

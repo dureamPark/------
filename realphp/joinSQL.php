@@ -8,7 +8,7 @@
 	$message = "";
 
 	// MySQL 드라이버 연결 
-	include("SQLconstants.php");
+	include("SQLconstants_d.php");
 	
 
 	// MySQL  추가 실행 	
@@ -36,16 +36,3 @@
 	} 
 ?>
 
-<!-- ?php 
-	 //로그 데이터 추출
-	include("./log.php");
-	writeLog( $message );
-?>
-
-다음 페이지로 메시지 전달 
-<form name = "frm" method = "post" action = "./searchSTD.php" >
-	<input type = 'hidden' name = 'message' value = ' * ?php echo $message;?>' >
-</form>
-<script language="javascript">
-	document.frm.submit();
-</script> -->
