@@ -71,6 +71,11 @@
             <!--로그아웃 여기있어요!!!!--->
             <!--로그아웃 여기있어요!!!!--->
             <!--로그아웃 여기있어요!!!!--->
+
+
+
+
+
             <!-- 바로 밑에 줄에 원래 onClick이 있었는데 그냥 보기 편하게 log_out쪽으로 붙였습니다.
             또한 onClick="location.href='./logoutSQL.php'"로 log_out을 클릭했을 때 페이지가 이동하도록 설정했습니다. -->
             <div style="padding-left: 12px; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
@@ -83,8 +88,15 @@
               </div>
               <!-- 여기에서 이동 -->
               <div onClick="location.href='./logoutSQL.php'" style="color: #1D1D1D; font-size: 22px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">log-out</div>
+            <!-- 여기에서 이동 --><!-- 여기에서 이동 --><!-- 여기에서 이동 -->
             </div>
             <!--여기까지 로그아웃 버튼-->
+
+
+
+
+
+
           </div>
         </div>
       </div>
