@@ -65,12 +65,13 @@
                   <div style="width: 14px; height: 6px; left: 0px; top: 8px; position: absolute; border: 1.40px #2D2D2D solid"></div>
                 </div>
               </div>
+              
               <div style="color: #1D1D1D; font-size: 22px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">user</div>
             </div>
             <!--로그아웃 여기있어요!!!!--->
             <!--로그아웃 여기있어요!!!!--->
             <!--로그아웃 여기있어요!!!!--->
-            <div onClick="javascript:move( './user.php' );" style="padding-left: 12px; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
               <div style="width: 20px; height: 20px; position: relative">
                 <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; opacity: 0.10"></div>
                 <div style="width: 18px; height: 14px; left: 1px; top: 3px; position: absolute">
@@ -78,7 +79,7 @@
                   <div style="width: 14px; height: 6px; left: 0px; top: 8px; position: absolute; border: 1.40px #2D2D2D solid"></div>
                 </div>
               </div>
-              <div style="color: #1D1D1D; font-size: 22px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">log-out</div>
+              <div onClick="location.href='./logoutSQL.php'" style="color: #1D1D1D; font-size: 22px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">log-out</div>
             </div>
             <!--여기까지 로그아웃 버튼-->
           </div>
