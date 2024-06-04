@@ -25,14 +25,33 @@
 	if( $result ) 
 	{	
 		$message = "(".$user_id.") 을 회원으로 추가하였습니다."; 
-        header("Location: loginPage.php");
-        exit();
+
+		?>
+
+		<script>
+			alert("회원가입이 완료되었습니다. 로그인을 시도해주세요!");
+			location.replace('loginPage.php');
+		</script>
+
+		<?php
+
+        // header("Location: loginPage.php");
+        // exit();
 	} 
 	else 
 	{
 		$message = "회원 명단에 추가할 수 없습니다."; 
-        header("Location: join.php?error=비밀번호 확인 실패.");
-        exit();
+
+
+		?>
+		<script>
+			alert("회원가입을 실패했습니다. 다시 시도해주세요!");
+			location.replace('join.php');
+		</script>
+
+<?php
+        // header("Location: join.php?error=비밀번호 확인 실패.");
+        // exit();
 	} 
 ?>
 
